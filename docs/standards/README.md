@@ -53,55 +53,110 @@ certificación ni conformidad integral con sus requisitos.**
 
 ---
 
-## 3. Gestión de proyectos
 
-### 3.1 Referencias
+## 3. Gestión y Dirección de Proyectos
 
-| Norma | Aplicación |
-|-------|------------|
-| ISO 21500:2021 | Contexto y conceptos de gestión de proyectos, programas y portafolios |
-| ISO 21502:2020 | Directrices para la gestión de proyectos |
+### 3.1 Referencias normativas y metodológicas
+
+| Referencia | Edición | Aplicación |
+|------------|---------|------------|
+| ISO 21500 | 2021 | Contexto y conceptos de gestión de proyectos, programas y portafolios |
+| ISO 21502 | 2020 | Directrices para la gestión de proyectos |
+| PMBOK Guide - PMI | 8.ª edición, 2025 | Principios, dominios de desempeño, prácticas y entrega de valor |
+| The Standard for Project Management - PMI | 2025 | Fundamentos y principios de dirección de proyectos |
 
 ### 3.2 Aplicación al Laboratorio IIoT
 
-Las referencias orientarán:
+La gestión del proyecto considerará:
 
-- Definición de objetivos y alcance.
-- Identificación de entregables.
+- Definición de objetivos, alcance y entregables.
 - Estructura de Desglose del Trabajo (EDT/WBS).
-- Planificación y secuenciación de actividades.
-- Cronogramas e hitos.
+- Planificación y control del cronograma.
 - Gestión de costos y presupuestos.
-- Gestión de recursos.
-- Identificación de interesados.
-- Gestión de comunicaciones.
+- Gestión de recursos y adquisiciones.
+- Identificación y gestión de interesados.
+- Gobierno y toma de decisiones.
 - Gestión de riesgos y oportunidades.
 - Gestión de calidad.
-- Gestión de adquisiciones.
-- Control integrado de cambios.
+- Gestión de comunicaciones.
 - Seguimiento del desempeño.
-- Cierre y lecciones aprendidas.
+- Control integrado de cambios.
+- Entrega de valor y beneficios esperados.
+- Cierre de fases y lecciones aprendidas.
 
-### 3.3 Integración con GitHub
+### 3.3 Dominios de desempeño del PMBOK
+
+Se considerarán los siete dominios de desempeño
+presentados en la octava edición:
+
+1. Gobernanza.
+2. Alcance.
+3. Cronograma.
+4. Finanzas.
+5. Interesados.
+6. Recursos.
+7. Riesgos.
+
+Los dominios se aplicarán proporcionalmente a la
+complejidad y madurez del Laboratorio IIoT.
+
+### 3.4 Enfoque metodológico
+
+El proyecto podrá combinar prácticas predictivas,
+adaptativas e híbridas.
+
+Se utilizará planificación estructurada para
+arquitectura, adquisición de hardware, instalación
+y puesta en servicio.
+
+Para firmware, software, analítica y experimentación,
+podrán utilizarse ciclos iterativos de desarrollo,
+pruebas y mejora.
+
+### 3.5 Integración con GitHub
 
 | Herramienta | Aplicación |
 |-------------|------------|
-| GitHub Issues | Actividades, errores y mejoras |
+| GitHub Issues | Actividades, incidencias y mejoras |
 | GitHub Projects | Planificación y seguimiento |
 | Milestones | Hitos y entregables |
 | Pull Requests | Revisión e integración |
-| GitHub Releases | Entregas y versiones |
+| Releases | Versiones y entregas |
 | ADR | Decisiones de ingeniería |
 | CHANGELOG.md | Historial de modificaciones |
 
-### 3.4 Documentación relacionada
+### 3.6 Documentación de gestión
 
-Directorio previsto:
+Directorio:
 
 `docs/project-management/`
 
-Este directorio contendrá los instrumentos de
-planificación, seguimiento y control del proyecto.
+Se desarrollarán progresivamente:
+
+- Acta de constitución del proyecto.
+- Definición de alcance.
+- EDT/WBS.
+- Cronograma e hitos.
+- Presupuesto y recursos.
+- Registro de riesgos.
+- Registro de interesados.
+- Plan de comunicaciones.
+- Plan de calidad.
+- Control de cambios.
+- Seguimiento y desempeño.
+- Lecciones aprendidas.
+
+### 3.7 Criterios de aplicación
+
+Las referencias ISO y PMI serán utilizadas como
+marcos complementarios y adaptadas al alcance
+experimental del laboratorio.
+
+Su aplicación no implica certificación ni
+conformidad integral con los estándares.
+
+Los resultados deberán sustentarse mediante
+documentación, indicadores y evidencias.
 
 ---
 
