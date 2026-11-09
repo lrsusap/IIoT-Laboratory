@@ -1,95 +1,130 @@
 
-# Analítica de Datos — Laboratorio IIoT
+# Ingeniería y Analítica de Datos — Laboratorio IIoT
 
 ## 1. Propósito
 
-Este módulo desarrolla procedimientos de análisis
-de datos aplicados a activos y procesos industriales.
+Documentar los fundamentos, metodologías,
+procedimientos y criterios de validación
+de los procesos analíticos del Laboratorio IIoT.
 
-Forma parte del Laboratorio IIoT y contribuye
-a la transformación de datos de sensores en
-información útil para la gestión del mantenimiento.
+Este directorio contiene documentación técnica.
+Los notebooks, scripts y modelos ejecutables
+se almacenarán en /analytics/.
 
 ## 2. Alcance
 
-Las actividades de analítica comprenden:
-
-- Exploración de datos.
-- Estadística descriptiva.
-- Visualización de variables.
-- Limpieza y preparación de datos.
-- Identificación de tendencias.
-- Análisis de correlaciones.
+- Análisis exploratorio de datos.
+- Estadística descriptiva e inferencial.
+- Tratamiento de series temporales.
+- Limpieza y transformación de datos.
 - Ingeniería de características.
+- Visualización e interpretación.
 - Detección de anomalías.
-- Modelos de aprendizaje automático.
+- Aprendizaje automático.
+- Evaluación de modelos predictivos.
 
-## 3. Casos de estudio
+## 3. Cadena analítica
 
-### Caso 01 — MetroPT3
+Adquisición
+    |
+Validación de datos
+    |
+Persistencia
+    |
+Preparación y limpieza
+    |
+Análisis exploratorio
+    |
+Ingeniería de características
+    |
+Modelado y evaluación
+    |
+Información para mantenimiento
 
-Análisis exploratorio y descriptivo de registros
-industriales provenientes de una unidad de
-producción de aire de un sistema ferroviario.
+## 4. Casos de estudio
 
-El caso permite estudiar procedimientos de:
+### MetroPT3
 
-- Exploración de conjuntos de datos.
-- Identificación de variables.
-- Análisis estadístico.
-- Visualización de distribuciones.
-- Evaluación de relaciones entre variables.
-- Interpretación de resultados.
+Se utilizará como referencia metodológica
+para explorar y analizar registros industriales.
 
-El desarrollo original se conserva en el
-repositorio académico Phase4-MetroPT3-
-Descriptive-Analysis del mismo autor.
+El caso permitirá documentar procedimientos
+de estadística descriptiva, visualización
+y análisis de variables.
 
-Los métodos reutilizados deberán conservar
-su procedencia y documentación.
+Los datos de MetroPT3 no representan mediciones
+del motor-bomba del Laboratorio IIoT.
 
-## 4. Relación con el motor-bomba
+### Motor-bomba
 
-Los procedimientos desarrollados con MetroPT3
-podrán adaptarse posteriormente a las mediciones
-obtenidas mediante:
+Se documentarán progresivamente los análisis
+realizados con datos adquiridos mediante:
 
-- PT100 y MAX31865.
+- PT100 + MAX31865.
 - ADXL355.
 - PZEM-004T.
-- ESP32-S3.
-- MQTT y PostgreSQL.
 
-La adaptación requerirá considerar diferencias
-entre sensores, unidades, comportamiento físico,
-frecuencia de muestreo y contexto operacional.
+## 5. Calidad de los datos
 
-## 5. Organización
+Todo procedimiento deberá considerar:
 
-- case-studies/: estudios analíticos de referencia.
-- notebooks/: notebooks reutilizables.
-- models/: modelos y procedimientos de IA/ML.
-- reports/: informes y visualizaciones.
+- Procedencia y trazabilidad.
+- Variables y unidades.
+- Resolución y frecuencia de muestreo.
+- Integridad temporal.
+- Registros duplicados.
+- Valores ausentes.
+- Valores atípicos.
+- Ruido y errores de medición.
+- Condiciones operacionales.
+- Transformaciones efectuadas.
 
-## 6. Reproducibilidad
+## 6. Validación de modelos
 
-Cada estudio deberá identificar:
+Se documentarán:
 
-- Dataset utilizado y procedencia.
-- Licencia o condiciones de uso.
-- Bibliotecas y versiones.
-- Transformaciones realizadas.
-- Código de análisis.
-- Resultados obtenidos.
-- Limitaciones del estudio.
+- Objetivo del modelo.
+- Dataset y características.
+- División de entrenamiento y prueba.
+- Prevención de fuga de información.
+- Métricas de evaluación.
+- Validación temporal cuando corresponda.
+- Limitaciones.
+- Reproducibilidad.
+- Evidencias de desempeño.
 
-## 7. Estado
+Los resultados obtenidos con datos sintéticos
+no demostrarán por sí solos capacidad predictiva
+sobre el activo físico real.
 
-MetroPT3: caso de estudio existente,
-pendiente de incorporación y validación
-dentro del repositorio IIoT-Laboratory.
+## 7. Documentos previstos
 
-Analítica del motor-bomba: en desarrollo.
+- analytics-methodology.md
+- exploratory-data-analysis.md
+- statistical-analysis.md
+- time-series-analysis.md
+- feature-engineering.md
+- anomaly-detection.md
+- predictive-modeling.md
+- model-validation.md
+
+## 8. Relación con el repositorio
+
+- ../../analytics/: notebooks y código.
+- ../data/: documentación de datos.
+- ../../data/: datasets y esquemas.
+- ../architecture/: arquitectura.
+- ../../tests/: pruebas y evidencias.
+
+## 9. Referencias
+
+- Guía Técnica del Laboratorio IIoT v6.1.
+- Marco normativo en docs/standards/.
+- Buenas prácticas de analítica reproducible.
+
+## 10. Responsable
+
+Lewis Rafael Susa Peñate.
 
 ---
 
