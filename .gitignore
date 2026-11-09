@@ -1,220 +1,532 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[codz]
-*$py.class
 
-# C extensions
+# ============================================================
+# IIoT-LABORATORY
+# .gitignore
+# Version: 1.0
+#
+# Project: Industrial Internet of Things Laboratory
+# Scope: Maintenance, IIoT, Networks, OT/IT Cybersecurity,
+#        Data Analytics and Industry 4.0
+#
+# Purpose:
+# Exclude temporary files, build outputs, local credentials,
+# private operational data and machine-specific configurations.
+#
+# IMPORTANT:
+# .gitignore does not protect files already tracked by Git.
+# Never commit credentials or private keys.
+# ============================================================
+
+
+# ============================================================
+# 01. PYTHON - CACHE AND COMPILED FILES
+# ============================================================
+
+__pycache__/
+*.py[cod]
+*$py.class
 *.so
 
-# Distribution / packaging
 .Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
+*.egg
+*.egg-info/
 .eggs/
-lib/
-lib64/
+eggs/
+develop-eggs/
 parts/
 sdist/
-var/
 wheels/
-share/python-wheels/
-*.egg-info/
+pip-wheel-metadata/
 .installed.cfg
-*.egg
-MANIFEST
 
-# PyInstaller
-#   Usually these files are written by a python script from a template
-#   before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
-*.spec
+# Python environments
+.venv/
+venv/
+env/
+ENV/
+virtualenv/
+.python-version
 
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Unit test / coverage reports
-htmlcov/
+# Python tools and caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 .tox/
 .nox/
 .coverage
 .coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py.cover
-*.lcov
-.hypothesis/
-.pytest_cache/
-cover/
-
-# Translations
-*.mo
-*.pot
-
-# Django stuff:
-*.log
-local_settings.py
-db.sqlite3
-db.sqlite3-journal
-
-# Flask stuff:
-instance/
-.webassets-cache
-
-# Scrapy stuff:
-.scrapy
-
-# Sphinx documentation
-docs/_build/
-
-# PyBuilder
-.pybuilder/
-target/
-
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# IPython
-profile_default/
-ipython_config.py
-
-# pyenv
-#   For a library or package, you might want to ignore these files since the code is
-#   intended to run in multiple environments; otherwise, check them in:
-# .python-version
-
-# pipenv
-#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
-#   However, in case of collaboration, if having platform-specific dependencies or dependencies
-#   having no cross-platform support, pipenv may install dependencies that don't work, or not
-#   install all needed dependencies.
-# Pipfile.lock
-
-# uv
-#   Similar to Pipfile.lock, it is generally recommended to include uv.lock in version control.
-#   This is especially recommended for binary packages to ensure reproducibility, and is more
-#   commonly ignored for libraries.
-# uv.lock
-
-# poetry
-#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
-#   This is especially recommended for binary packages to ensure reproducibility, and is more
-#   commonly ignored for libraries.
-#   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
-# poetry.lock
-# poetry.toml
-
-# pdm
-#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
-#   pdm recommends including project-wide configuration in pdm.toml, but excluding .pdm-python.
-#   https://pdm-project.org/en/latest/usage/project/#working-with-version-control
-# pdm.lock
-# pdm.toml
-.pdm-python
-.pdm-build/
-
-# pixi
-#   Similar to Pipfile.lock, it is generally recommended to include pixi.lock in version control.
-# pixi.lock
-#   Pixi creates a virtual environment in the .pixi directory, just like venv module creates one
-#   in the .venv directory. It is recommended not to include this directory in version control.
-.pixi/*
-!.pixi/config.toml
-
-# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
-__pypackages__/
-
-# Celery stuff
-celerybeat-schedule*
-celerybeat.pid
-
-# Redis
-*.rdb
-*.aof
-*.pid
-
-# RabbitMQ
-mnesia/
-rabbitmq/
-rabbitmq-data/
-
-# ActiveMQ
-activemq-data/
-
-# SageMath parsed files
-*.sage.py
-
-# Environments
-.env
-.envrc
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-
-# Spyder project settings
-.spyderproject
-.spyproject
-
-# Rope project settings
-.ropeproject
-
-# mkdocs/Zensical documentation
-/site
-
-# mypy
-.mypy_cache/
-.dmypy.json
-dmypy.json
-
-# Pyre type checker
+htmlcov/
+.cache/
 .pyre/
-
-# pytype static type analyzer
 .pytype/
+.dmypy.json
 
-# Cython debug symbols
-cython_debug/
 
-# PyCharm
-#   JetBrains specific template is maintained in a separate JetBrains.gitignore that can
-#   be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
-#   and can be added to the global gitignore or merged into this file.  For a more nuclear
-#   option (not recommended) you can uncomment the following to ignore the entire idea folder.
-# .idea/
+# ============================================================
+# 02. JUPYTER NOTEBOOKS AND GOOGLE COLAB
+# ============================================================
 
-# Abstra
-#   Abstra is an AI-powered process automation framework.
-#   Ignore directories containing user credentials, local state, and settings.
-#   Learn more at https://abstra.io/docs
-.abstra/
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+.profile_default/
+.ipython/
 
-# Visual Studio Code
-#   Visual Studio Code specific template is maintained in a separate VisualStudioCode.gitignore that
-#   can be found at https://github.com/github/gitignore/blob/main/Global/VisualStudioCode.gitignore
-#   and can be added to the global gitignore or merged into this file. However, if you prefer, you
-#   could uncomment the following to ignore the entire vscode folder
-# .vscode/
-# Temporary file for partial code execution
-tempCodeRunnerFile.py
+# Notebook temporary exports
+*.nbconvert.ipynb
 
-# Ruff stuff:
-.ruff_cache/
+# Google Colab temporary files
+.config/
 
-# PyPI configuration file
-.pypirc
 
-# Marimo
-marimo/_static/
-marimo/_lsp/
-__marimo__/
+# ============================================================
+# 03. ESP32-S3 / ARDUINO / PLATFORMIO / ESP-IDF
+# ============================================================
 
-# Streamlit
-.streamlit/secrets.toml
+# PlatformIO build and dependency files
+.pio/
+.pioenvs/
+.piolibdeps/
+
+# Compiled firmware and build artifacts
+*.elf
+*.bin
+*.hex
+*.map
+*.o
+*.obj
+*.d
+*.a
+
+# ESP-IDF
+sdkconfig.old
+sdkconfig.*.old
+managed_components/
+dependencies.lock
+
+# Arduino temporary files
+arduino_build_*/
+arduino_cache_*/
+*.ino.cpp
+
+# Local firmware backup files
+*.ino.bak
+*.cpp.bak
+*.h.bak
+
+# Note:
+# Keep source code (.ino, .cpp, .h), platformio.ini,
+# CMakeLists.txt and required build configuration files.
+# Review sdkconfig and sdkconfig.defaults before publishing.
+
+
+# ============================================================
+# 04. HMI / LVGL / DISPLAY DEVELOPMENT
+# ============================================================
+
+# Generated UI build outputs
+hmi/**/build/
+hmi/**/dist/
+hmi/**/.pio/
+
+# Temporary UI exports
+*.lvgl.tmp
+
+# Keep:
+# LVGL source files, display configuration, UI resources,
+# original images, fonts with redistribution permission,
+# and reproducible project configurations.
+
+
+# ============================================================
+# 05. NODE-RED
+# ============================================================
+
+# Node-RED local runtime files
+.node-red/.config.runtime.json
+.node-red/.config.nodes.json
+.node-red/.config.projects.json
+.node-red/.sessions.json
+
+# Runtime credential files
+flows_cred.json
+flows_*_cred.json
+**/flows_cred.json
+**/flows_*_cred.json
+
+# Local Node-RED state and logs
+.node-red/.cache/
+.node-red/.npm/
+.node-red/node_modules/
+
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IMPORTANT:
+# Node-RED flow exports may contain embedded credentials,
+# API endpoints and operational network information.
+# Review every JSON flow before committing.
+
+
+# ============================================================
+# 06. MQTT / MOSQUITTO
+# ============================================================
+
+# Broker persistence and runtime
+mosquitto.db
+mosquitto.db.*
+mosquitto.log
+mosquitto.pid
+
+# Broker credential files
+password_file
+passwd
+pwfile
+**/mosquitto/password_file
+**/mosquitto/passwd
+**/mosquitto/pwfile
+
+# Local TLS private material
+*.key
+*.pem
+*.p12
+*.pfx
+*.p8
+*.jks
+*.keystore
+
+# CA/private certificate directories
+private-certs/
+private-keys/
+
+# Keep only sanitized MQTT configuration templates
+# and public certificates explicitly reviewed for publication.
+
+
+# ============================================================
+# 07. POSTGRESQL / SQLITE / DATABASES
+# ============================================================
+
+# Local database files
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
+
+# PostgreSQL local directories and runtime
+pgdata/
+postgres-data/
+postmaster.pid
+postmaster.opts
+
+# Database dumps and backups
+*.dump
+*.backup
+*.bak.sql
+*.sql.gz
+*.sql.zip
+
+# Keep:
+# SQL schema files, migrations, test queries and
+# sanitized sample data.
+
+
+# ============================================================
+# 08. DATASETS AND DATA ANALYTICS
+# ============================================================
+
+# Raw operational measurements
+/data/raw/**
+!/data/raw/.gitkeep
+!/data/raw/README.md
+
+# Processed operational data
+/data/processed/**
+!/data/processed/.gitkeep
+!/data/processed/README.md
+
+# Private and restricted datasets
+/data/private/
+/data/restricted/
+/data/external/
+
+# Temporary analytical results
+/analytics/outputs/
+/analytics/tmp/
+/analytics/cache/
+
+# Local training outputs and large model weights
+/analytics/models/checkpoints/
+*.ckpt
+*.pt
+*.pth
+*.h5
+*.hdf5
+*.onnx
+
+# IMPORTANT:
+# Do not globally ignore CSV or XLSX files.
+# Small synthetic datasets and approved examples
+# may be published in data/sample-data/ or
+# data/synthetic/.
+
+
+# ============================================================
+# 09. POWER BI / EXCEL
+# ============================================================
+
+# Excel temporary files
+~$*
+*.xlsb.tmp
+
+# Power BI local temporary files
+*.pbix.tmp
+*.pbit.tmp
+
+# Keep:
+# Approved .pbix and .pbit files after checking
+# embedded data, credentials and connection details.
+
+
+# ============================================================
+# 10. NETWORKS / ROUTERS / SWITCHES / FIREWALLS
+# ============================================================
+
+# Private network configuration directories
+/network/private/
+/network/backups/
+/network/runtime/
+
+# Sensitive firewall backups
+/security/firewall/backups/
+/security/firewall/private/
+
+# Device credentials and private keys
+*.ovpn.auth
+*.wgkey
+
+# Keep sanitized examples for:
+# OpenWrt, Open vSwitch, OPNsense, VLAN, routing,
+# ACL, firewall rules and network diagrams.
+
+# IMPORTANT:
+# Review all infrastructure configuration before publishing.
+
+
+# ============================================================
+# 11. CYBERSECURITY / IDS / IPS / SIEM / HONEYPOTS
+# ============================================================
+
+# Operational alerts and sensitive logs
+/security/logs/
+/security/alerts/private/
+/security/evidence/private/
+
+# Packet captures
+*.pcap
+*.pcapng
+*.cap
+
+# IDS and SIEM runtime data
+/security/suricata/logs/
+/security/snort/logs/
+/security/wazuh/data/
+/security/zeek/logs/
+
+# Honeypot collected operational data
+/security/tpot/data/
+/security/tpot/logs/
+/security/tpot/captures/
+
+# Security scan outputs
+*.nessus
+
+# Keep:
+# Sanitized IDS rules, SIEM decoder examples,
+# detection use cases and laboratory procedures.
+
+
+# ============================================================
+# 12. CREDENTIALS / SECRETS / ENVIRONMENT
+# ============================================================
+
+# Environment variables
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Sensitive files
+*.secret
+*.secrets
+*.token
+*.credentials
+
+# Private configuration directories
+/secrets/
+/credentials/
+/private/
+**/secrets/
+**/credentials/
+
+# SSH credentials
+id_rsa
+id_rsa.*
+id_ed25519
+id_ed25519.*
+known_hosts
+
+# Cloud service credentials
+service-account.json
+credentials.json
+
+# IMPORTANT:
+# Never commit Wi-Fi passwords, MQTT credentials,
+# PostgreSQL passwords, authentication tokens,
+# TLS private keys or production access details.
+
+
+# ============================================================
+# 13. SYSTEM LOGS / TEMPORARY FILES
+# ============================================================
+
+*.log
+*.log.*
+*.tmp
+*.temp
+*.swp
+*.swo
+*.orig
+*.rej
+*.old
+
+logs/
+tmp/
+temp/
+cache/
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+
+# ============================================================
+# 14. IDE / DEVELOPMENT ENVIRONMENT
+# ============================================================
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+
+# VS Code local settings
+.vscode/settings.json
+.vscode/*.log
+
+# Keep shared VS Code settings only after review.
+
+# JetBrains
+.idea/
+*.iml
+
+# Eclipse
+.metadata/
+.recommenders/
+
+
+# ============================================================
+# 15. DOCUMENTATION AND OFFICE TEMPORARY FILES
+# ============================================================
+
+# Word temporary files
+~$*.docx
+*.docx.tmp
+
+# LibreOffice temporary locks
+.~lock.*
+
+# Generated local preview files
+/docs/.preview/
+/docs/.cache/
+
+# Keep official documentation:
+# Markdown, diagrams, approved PDF/DOCX files,
+# architecture decision records and test procedures.
+
+
+# ============================================================
+# 16. TESTS / MEASUREMENTS / EVIDENCE
+# ============================================================
+
+# Private test evidence
+/tests/evidence/private/
+/tests/results/private/
+
+# Temporary test outputs
+/tests/tmp/
+/tests/cache/
+
+# Test reports generated locally
+junit.xml
+test-results.xml
+
+# Keep:
+# Test cases, expected results, acceptance criteria,
+# sanitized evidence and approved validation reports.
+
+
+# ============================================================
+# 17. DEPLOYMENT / BACKUP
+# ============================================================
+
+# Deployment secrets
+/deployment/secrets/
+/deployment/private/
+
+# Local deployment backups
+/deployment/backups/
+
+# Docker environment secrets
+docker-compose.override.yml
+
+# Terraform local state (future use)
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+
+# Keep:
+# Sanitized deployment procedures, compose templates,
+# infrastructure definitions and configuration examples.
+
+
+# ============================================================
+# 18. VERSION CONTROL AND PROJECT POLICY
+# ============================================================
+
+# Do not ignore:
+# README.md
+# LICENSE
+# SECURITY.md
+# CONTRIBUTING.md
+# CHANGELOG.md
+# .github/
+# docs/
+# firmware source code
+# approved configuration templates
+# synthetic datasets
+# analysis notebooks
+# test procedures
+
+# ============================================================
+# END OF IIoT-LABORATORY .gitignore
+# ============================================================
