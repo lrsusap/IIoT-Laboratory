@@ -14,6 +14,24 @@ configuraciones, datos y tecnologías de terceros.
 La publicación de un componente no implica que
 todos sus materiales tengan la misma licencia.
 
+## Alcance de las licencias
+
+El archivo LICENSE de la raíz establece los términos MIT
+para el software original que el titular publique
+expresamente bajo dicha licencia.
+
+Los documentos, diseños de hardware, datasets y
+materiales de terceros podrán tener condiciones
+diferentes, identificadas en sus respectivos archivos
+o avisos de licencia.
+
+Antes de publicar materiales adicionales se verificará
+su titularidad, procedencia y permiso de redistribución.
+
+Los documentos originales sin licencia abierta expresa
+permanecen sujetos a los derechos de su titular,
+sin perjuicio de los permisos legales aplicables.
+
 ## 2. Autoría del proyecto
 
 **Creador y desarrollador principal:**
